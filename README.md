@@ -1,2 +1,6 @@
-# Hello
-nataliia oleksenko
+db.articles.find(
+
+   {
+        tags : { $in: ["alpha", "beta"]},
+    },
+)
