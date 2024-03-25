@@ -1,5 +1,6 @@
-// Уменьшить на 3% баланс пользователей, которые не из Germany и не из France, имеющие положительный баланс
-db.users.updateMany(
-    {country: {$nin: ["Germany", "France"]}, balance: {$gt: 0}},
-    {$mul: {balance: 0.97}}
+db.articles.find(
+
+   {
+        tags : { $in: ["alpha", "beta"]},
+    },
 )
