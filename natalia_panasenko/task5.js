@@ -3,7 +3,7 @@
 
 
 db.tracks.aggregate([
-  { $sort: { balance: -1 } },
+  { $sort: { duration: -1 } },
   { $project: { title: 1, _id: 0 } },
   { $limit: 3 }
 ])
